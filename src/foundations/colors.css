@@ -1,1 +1,97 @@
-/* Shared light and dark color tokens belong here. */
+.theme-dark {
+	color-scheme: dark;
+
+	/* Omarchy Solitude source palette. */
+	--solitude-bg: #101315;
+	--solitude-bg-dark: #0c0e10;
+	--solitude-bg-darkest: #080a0b;
+	--solitude-surface-1: #171b1e;
+	--solitude-surface-2: #1e2427;
+	--solitude-surface-3: #293135;
+	--solitude-selection: #343d41;
+	--solitude-muted: #4b4e55;
+	--solitude-bright-blue: #5d6367;
+	--solitude-cyan: #707070;
+	--solitude-accent: #798186;
+	--solitude-green: #9fa5a9;
+	--solitude-bright: #a5aeb4;
+	--solitude-border-active: #a8adb0;
+	--solitude-magenta: #aeaeae;
+	--solitude-warm: #c9c2b4;
+	--solitude-foreground: #cacccc;
+	--solitude-foreground-warm: #cbc2be;
+	--solitude-yellow: #d9dbdc;
+	--solitude-alert: #de6145;
+
+	/* Obsidian neutral scale. */
+	--color-base-00: var(--solitude-bg-darkest);
+	--color-base-05: var(--solitude-bg-dark);
+	--color-base-10: var(--solitude-bg);
+	--color-base-20: var(--solitude-surface-1);
+	--color-base-25: var(--solitude-surface-2);
+	--color-base-30: var(--solitude-surface-3);
+	--color-base-35: var(--solitude-selection);
+	--color-base-40: var(--solitude-muted);
+	--color-base-50: var(--solitude-bright-blue);
+	--color-base-60: var(--solitude-cyan);
+	--color-base-70: var(--solitude-green);
+	--color-base-100: var(--solitude-foreground);
+
+	/* Accent and restrained semantic colors. */
+	--color-accent: var(--solitude-accent);
+	--color-accent-1: var(--solitude-bright);
+	--color-accent-2: var(--solitude-border-active);
+	--color-red: var(--solitude-alert);
+	--color-orange: var(--solitude-warm);
+	--color-yellow: var(--solitude-yellow);
+	--color-green: var(--solitude-green);
+	--color-cyan: var(--solitude-cyan);
+	--color-blue: var(--solitude-accent);
+	--color-purple: var(--solitude-magenta);
+	--color-pink: #9a9a9a;
+
+	/* Surfaces. */
+	--background-primary: var(--solitude-bg);
+	--background-primary-alt: var(--solitude-surface-1);
+	--background-secondary: var(--solitude-bg-dark);
+	--background-secondary-alt: var(--solitude-bg-darkest);
+	--background-modifier-hover: var(--solitude-surface-2);
+	--background-modifier-active-hover: var(--solitude-surface-3);
+	--background-modifier-border: var(--solitude-surface-3);
+	--background-modifier-border-hover: var(--solitude-muted);
+	--background-modifier-border-focus: var(--solitude-border-active);
+	--background-modifier-form-field: var(--solitude-bg-dark);
+	--background-modifier-message: var(--solitude-selection);
+	--background-modifier-error: color-mix(in oklch, var(--solitude-alert) 18%, var(--solitude-bg));
+	--background-modifier-error-hover: color-mix(in oklch, var(--solitude-alert) 28%, var(--solitude-bg));
+	--background-modifier-success: var(--solitude-selection);
+
+	/* Text. */
+	--text-normal: var(--solitude-foreground);
+	--text-muted: var(--solitude-bright);
+	--text-faint: var(--solitude-bright-blue);
+	--text-on-accent: var(--solitude-bg-darkest);
+	--text-on-accent-inverted: var(--solitude-foreground);
+	--text-accent: var(--solitude-border-active);
+	--text-accent-hover: var(--solitude-yellow);
+	--text-success: var(--solitude-green);
+	--text-warning: var(--solitude-warm);
+	--text-error: var(--solitude-alert);
+	--text-selection: var(--solitude-selection);
+	--text-highlight-bg: color-mix(in oklch, var(--solitude-accent) 45%, transparent);
+	--caret-color: var(--solitude-yellow);
+
+	/* Common controls and boundaries. */
+	--interactive-normal: var(--solitude-bg-dark);
+	--interactive-hover: var(--solitude-surface-2);
+	--interactive-accent: var(--solitude-accent);
+	--interactive-accent-hover: var(--solitude-border-active);
+	--icon-color: var(--solitude-bright-blue);
+	--icon-color-hover: var(--solitude-bright);
+	--icon-color-active: var(--solitude-yellow);
+	--divider-color: var(--solitude-surface-3);
+	--divider-color-hover: var(--solitude-accent);
+	--scrollbar-bg: transparent;
+	--scrollbar-thumb-bg: var(--solitude-selection);
+	--scrollbar-active-thumb-bg: var(--solitude-muted);
+}

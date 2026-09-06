@@ -1,1 +1,50 @@
-/* Editor and reading-view styles belong here. */
+.theme-dark {
+	/* Document hierarchy. */
+	--inline-title-color: var(--solitude-yellow);
+	--h1-color: var(--solitude-yellow);
+	--h2-color: var(--solitude-foreground-warm);
+	--h3-color: var(--solitude-foreground);
+	--h4-color: var(--solitude-bright);
+	--h5-color: var(--solitude-green);
+	--h6-color: var(--solitude-accent);
+	--bold-color: var(--solitude-foreground-warm);
+	--italic-color: var(--solitude-bright);
+	--list-marker-color: var(--solitude-accent);
+	--list-marker-color-hover: var(--solitude-border-active);
+	--hr-color: var(--solitude-selection);
+	--blockquote-border-color: var(--solitude-accent);
+
+	/* Links, tags, and embeds. */
+	--link-color: var(--solitude-border-active);
+	--link-color-hover: var(--solitude-yellow);
+	--link-external-color: var(--solitude-accent);
+	--link-external-color-hover: var(--solitude-bright);
+	--link-unresolved-color: var(--solitude-alert);
+	--tag-color: var(--solitude-foreground-warm);
+	--tag-color-hover: var(--solitude-yellow);
+	--tag-background: var(--solitude-selection);
+	--tag-background-hover: var(--solitude-muted);
+	--embed-border-start: 2px solid var(--solitude-selection);
+
+	/* Inline and fenced code. */
+	--code-background: var(--solitude-bg-dark);
+	--code-normal: var(--solitude-foreground-warm);
+	--code-comment: var(--solitude-bright-blue);
+	--code-function: var(--solitude-bright);
+	--code-important: var(--solitude-alert);
+	--code-keyword: var(--solitude-yellow);
+	--code-operator: var(--solitude-accent);
+	--code-property: var(--solitude-green);
+	--code-punctuation: var(--solitude-cyan);
+	--code-string: var(--solitude-warm);
+	--code-tag: var(--solitude-alert);
+	--code-value: var(--solitude-magenta);
+
+	/* Tables and metadata. */
+	--table-border-color: var(--solitude-surface-3);
+	--table-header-background: var(--solitude-bg-dark);
+	--table-header-background-hover: var(--solitude-surface-2);
+	--table-row-background-hover: var(--solitude-surface-1);
+	--metadata-background: var(--solitude-bg-dark);
+	--metadata-border-color: var(--solitude-surface-3);
+}

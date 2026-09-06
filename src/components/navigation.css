@@ -1,1 +1,16 @@
-/* Ribbon, sidebar, and navigation styles belong here. */
+.theme-dark {
+	--titlebar-background: var(--solitude-bg-darkest);
+	--titlebar-background-focused: var(--solitude-bg-dark);
+	--ribbon-background: var(--solitude-bg-dark);
+	--ribbon-background-collapsed: var(--solitude-bg-darkest);
+	--file-header-background: var(--solitude-bg);
+	--file-header-background-focused: var(--solitude-bg);
+	--status-bar-background: var(--solitude-bg-dark);
+	--nav-item-color: var(--solitude-bright);
+	--nav-item-color-hover: var(--solitude-foreground);
+	--nav-item-color-active: var(--solitude-yellow);
+	--nav-item-color-selected: var(--solitude-foreground);
+	--nav-item-background-hover: var(--solitude-surface-2);
+	--nav-item-background-active: var(--solitude-selection);
+	--nav-item-background-selected: var(--solitude-surface-3);
+}

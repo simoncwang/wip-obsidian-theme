@@ -1,3 +1,16 @@
+.theme-dark {
+	--tab-container-background: var(--solitude-bg-dark);
+	--tab-background-active: var(--solitude-bg);
+	--tab-text-color: var(--solitude-bright-blue);
+	--tab-text-color-active: var(--solitude-bright);
+	--tab-text-color-focused: var(--solitude-bright);
+	--tab-text-color-focused-active: var(--solitude-foreground);
+	--tab-text-color-focused-highlighted: var(--solitude-yellow);
+	--tab-text-color-focused-active-current: var(--solitude-yellow);
+	--tab-divider-color: var(--solitude-surface-3);
+	--tab-outline-color: var(--solitude-surface-3);
+}
+
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
 	display: none;

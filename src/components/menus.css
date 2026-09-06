@@ -1,3 +1,13 @@
+.theme-dark {
+	--menu-background: var(--solitude-bg-dark);
+	--menu-border-color: var(--solitude-surface-3);
+	--modal-background: var(--solitude-bg);
+	--modal-border-color: var(--solitude-surface-3);
+	--prompt-background: var(--solitude-bg);
+	--popover-background: var(--solitude-bg);
+	--suggestion-background: var(--solitude-bg-dark);
+}
+
 .menu {
 	padding: var(--size-2-1);
 }
