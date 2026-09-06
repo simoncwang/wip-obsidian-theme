@@ -1,3 +1,8 @@
+/*
+ * This is the source entry point for the theme.
+ * Edit files under src/ and run the build instead of editing theme.css directly.
+ *//* Shared light and dark color tokens belong here. *//* Shared spacing variables belong here. *//* Shared typography variables belong here. */
+
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -8,11 +13,7 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
-}
-
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
-}
+}/* Editor and reading-view styles belong here. */
 
 svg * {
 	stroke-linecap: square;
@@ -31,4 +32,11 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* Ribbon, sidebar, and navigation styles belong here. */
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
 }

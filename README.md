@@ -2,9 +2,9 @@
 
 A custom Obsidian theme currently under development.
 
-## Proposed architecture
+## Architecture
 
-Theme styles will be organized as small source files and compiled into the single `theme.css` file that Obsidian loads.
+Theme styles are organized as small source files and compiled into the single `theme.css` file that Obsidian loads.
 
 ```text
 src/
@@ -45,8 +45,7 @@ Make style changes in `src/`, not directly in `theme.css`. While the watcher is 
 Before committing, build and validate the theme:
 
 ```bash
-npm run build
-npm run lint
+npm run check
 ```
 
 Commit both the source changes and the generated `theme.css`:
@@ -59,6 +58,17 @@ git push
 
 ## Releases
 
-The planned GitHub Actions release workflow will install dependencies, lint the source, build `theme.css`, and package the generated file together with `manifest.json` in a draft GitHub release.
+The GitHub Actions release workflow installs dependencies, lints the source, builds `theme.css`, and packages the generated file together with `manifest.json` in a draft GitHub release.
 
 The workflow will also verify that the committed `theme.css` matches the build output. This keeps direct clones, repository source, and published release artifacts synchronized.
+
+The release workflow runs when a Git tag is pushed. To create a patch release, first commit all intended theme changes, then run:
+
+```bash
+npm version patch --tag-version-prefix=""
+git push --follow-tags
+```
+
+Use `minor` or `major` in place of `patch` when appropriate. The version command updates `package.json`, `manifest.json`, and `versions.json`, creates a release commit, and tags it without a `v` prefix. The tag must exactly match the version in `manifest.json`.
+
+After the tag is pushed, GitHub Actions creates a draft release. Review its generated notes and attached `manifest.json` and `theme.css`, then publish it from GitHub when it is ready.
