@@ -11,7 +11,7 @@
 		"check": "npm run lint && npm run build && npm run lint:dist"
 	},
 	"devDependencies": {
-		"postcss": "^8.5.6",
+		"postcss": "^8.5.28",
 		"postcss-cli": "^11.0.1",
 		"postcss-import": "^16.1.1",
 		"stylelint": "^17.0.0",
